@@ -1,5 +1,6 @@
 ## Тестовое задание в Ozon
 ### Задание 4
+Ответ: D
 ### Задание 5
 ```sql
 SELECT DATE_TRUNC('month', Sales.Date) AS Month,
