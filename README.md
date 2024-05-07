@@ -35,8 +35,6 @@ SELECT Students.ID, Students.Name
 FROM Students LEFT JOIN Marks ON Students.ID = Marks.ID
 WHERE Marks.Mark IS NULL OR Marks.Mark >= 4
 GROUP BY Students.ID, Students.Name
-HAVING 
-  COUNT(DISTINCT Marks.Subject) = 0 OR COUNT(DISTINCT CASE WHEN Marks.Mark < 4 THEN Marks.Subject END) = 0;
 ```
 ### Задание 7
 Решение находится в файле "test_ozon.ipynb"
